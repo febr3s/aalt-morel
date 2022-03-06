@@ -1,0 +1,58 @@
+url:
+baseurl:
+title: AALT
+description: Afro-Latin American Literature in Translation
+permalink: /:categories/:year/:month/:day/:title:output_ext
+BASE_PATH :
+img: logo.png
+post_limit:
+background: trama.png
+
+author : 
+  name : MOREL
+  site: https://morel.la
+  description : Metadatos de Obras para Repositorios Electrónicos Latinoamericanos impulsa la creación de archivos digitales de libre acceso.
+  image : avatar.png
+  email : proyectomorel@gmail.com
+  github : 
+  twitter : 
+  instagram: morelrep
+
+
+#Collections
+collections:
+  cities:
+    output: true
+    permalink: /ciudades/:name
+  books:
+    output: true
+    permalink: /obras/:name
+  authors:
+    output: true
+    permalink: /autoras/:name
+  publishers:
+    output: true
+    permalink: /imprentas-y-editoriales/:name
+  repositories:
+    output: true
+    permalink: /repositorios/:name
+  periods:
+    output: true 
+    permalink: /periodos/:name
+  chriterias:
+    output: true
+    permalink: /criterios/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+theme: morel-theme

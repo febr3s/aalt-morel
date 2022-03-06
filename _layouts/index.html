@@ -1,0 +1,39 @@
+---
+layout: default
+---
+        <h1 class="index">{{ site.description }}</h1>
+        
+         <!--Una al azar -->
+        <div class="row obras">
+            <h2 class="index">Próximo lanzamiento en New Mexico Press</h2>
+        </div>
+        {% include book-sample.html %}
+
+        <!--Búsqueda-->
+        <a href="search"><div class="search-index"><i class="fa fa-search" aria-hidden="true" class="search-index"></i></div></a>
+
+        <!--Criterios -->
+        <div class="row obras">
+            <h2 class="index">Obras por categoría</h2>
+        </div>
+
+        {% include chriteria.html %}
+
+
+        <!--Ocho al azar-->        
+        <div class="row obras">
+            <h2 class="index">Obras descargables</h2>
+        </div>
+        {% include lista-descargables.html %}
+       
+
+        <!--Última vitrina-->
+        <div class="row obras">
+            <h2 class="index">Otras obras</h2>
+        </div>
+        <div class="row obras">
+            <p class="index">De referencia, no descargables</p>
+        </div>
+        {% include lista-no-descargables.html %}
+
+       
