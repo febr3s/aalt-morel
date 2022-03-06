@@ -1,4 +1,4 @@
-        {% assign books = site.data.books | sort:edition %}
+        {% assign books = site.data.books | sort:'edition' %}
         {% for book in books limit:1 %}
         {% if book.publisher == "New Mexico Press"}
         <h1 class="book">{{ book.title }}</h1>
