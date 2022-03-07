@@ -1,6 +1,8 @@
-                            <a href="{{ BASE_PATH }}{{ book.filename }}"><p class="overlay-text-inside">Edición publicada en {{ book.city }} por {{ book.publisher }} en {{ book.edition }}</p>
+                            {% assign author_raw = book.author | split: ' ' %}
+                            {% assign title_raw = book.title | split: ' ' %}
+                            <a href="{{BASE_PATH}}/obras/{{ title_raw[0] | slugify:"latin" }}{% if title_raw[1] %}-{{ title_raw[1] | slugify:"latin" }}{% endif %}{% if title_raw[2] %}-{{ title_raw[2] | slugify:"latin" }}{% endif %}{% if title_raw[3] %}-{{ title_raw[3] | slugify:"latin" }}{% endif %}{% if author_raw[-3] %}-{{ author_raw[-3] | slugify:"latin" }}{% endif %}-{{ author_raw[-2] | slugify:"latin" }}-{{ author_raw[-1] | slugify:"latin" }}-{{ book.edition }}" title=""><p class="overlay-text-inside">Edición publicada en {{ book.city }} por {{ book.publisher }} en {{ book.edition }}</p>
                             <hr class="overlay-text-inside"></a>
-                            <a href="{{ BASE_PATH }}{{ book.filename }}">
+                            <a href="{{BASE_PATH}}/obras/{{ title_raw[0] | slugify:"latin" }}{% if title_raw[1] %}-{{ title_raw[1] | slugify:"latin" }}{% endif %}{% if title_raw[2] %}-{{ title_raw[2] | slugify:"latin" }}{% endif %}{% if title_raw[3] %}-{{ title_raw[3] | slugify:"latin" }}{% endif %}{% if author_raw[-3] %}-{{ author_raw[-3] | slugify:"latin" }}{% endif %}-{{ author_raw[-2] | slugify:"latin" }}-{{ author_raw[-1] | slugify:"latin" }}-{{ book.edition }}" title="">
                                 <i class="fa fa-eye see-and-download morel"></i>
                             </a>
                             <i class="fa fa-download clear"></i>
