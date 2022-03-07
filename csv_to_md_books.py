@@ -13,7 +13,7 @@ for book in books:
 	author2 =str(book[18])# str is a function
 	author3 =str(book[22])	
 	# the next lines create the different components of the url for the main author
-	author_raw = str(book[14])
+	author_raw = str(book[13])
 	author_split = author_raw.split(" ") # split is a built-in method, we are transforming the full name of the author into a list
 	author_short = (author_split[-3:])
 	author = "-".join(author_short)
@@ -35,6 +35,6 @@ for book in books:
 
 
 	with open(file_name, 'w', encoding="utf-8") as f:
-		f.write(f'---\ntitle: {title_raw}\nauthor: {author_raw}\nauthor2: {author2}\nauthor3: {author3}\n---\n{xcrpt}')
+		f.write(f'---\ntitle: "{title_raw}"\nauthor: {author_raw}\nauthor2: {author2}\nauthor3: {author3}\nfilename: "{url}"\n---\n{xcrpt}')
 		f.close()
 	print(f'{file_name} saved')

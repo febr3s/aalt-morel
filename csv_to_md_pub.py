@@ -15,6 +15,6 @@ for book in books:
 	file_name = f'_publishers/{url}.md'
 
 	with open(file_name, 'w', encoding="utf-8") as f:
-		f.write(f'---\ntitle: {title}\n---')
+		f.write(f'---\ntitle: "{title}"\n---')
 		f.close()
 	print(f'{file_name} saved')

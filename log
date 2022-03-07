@@ -3,3 +3,10 @@
 - Configurar un display para libros sin portada y un llamado a la acción para añadirla
 - agregar chriteria de idioma, genre, nacionalidad y dominio público
 - sustituir avatar de chriterias
+
+March 6
+# Tercer commit
+
+- Hice un workarond del que estoy muy orgulloso para emular con Liquid la norma de url human readable que se autogeneran con python
+- Cuadré bien el background
+- Generé todas las páginas

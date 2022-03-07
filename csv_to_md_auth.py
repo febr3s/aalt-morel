@@ -10,7 +10,7 @@ books = data.values.tolist()
 
 # Loop through each name, create .md file, set contents to string
 for book in books:
-	title = str(book[14])
+	title = str(book[13])
 	url = slugify(title)
 	file_name = f'_authors/{url}.md'
 

@@ -1,11 +1,7 @@
-url:
-baseurl:
-title: AALT
-description: Afro-Latin American Literature in Translation
+title: MOREL
+description: obras latinoamericanas de dominio público
 permalink: /:categories/:year/:month/:day/:title:output_ext
-BASE_PATH :
 img: logo.png
-post_limit:
 background: trama.png
 
 author : 
@@ -18,8 +14,6 @@ author :
   twitter : 
   instagram: morelrep
 
-
-#Collections
 collections:
   cities:
     output: true
@@ -51,8 +45,28 @@ defaults:
       layout: "author"
   - scope:
       path: ""
+      type: "books"
+    values:
+      layout: "book"
+  - scope:
+      path: ""
+      type: "cities"
+    values:
+      layout: "city"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "publishers"
+    values:
+      layout: "publisher"
+  - scope:
+      path: ""
+      type: "repositories"
+    values:
+      layout: "repository"
 
 theme: morel-theme
