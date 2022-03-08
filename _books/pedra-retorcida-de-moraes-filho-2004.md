@@ -5,8 +5,4 @@ author2:
 author3: 
 filename: "pedra-retorcida-de-moraes-filho-2004"
 ---
-Repare
-Onde eu sou
-descansa um silêncio,
-e um moço fazendo círculos com pedras
-na beira do rio.
+Repare<br>Onde eu sou<br>descansa um silêncio,<br>e um moço fazendo círculos com pedras<br>na beira do rio.

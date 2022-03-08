@@ -5,17 +5,4 @@ author2:
 author3: 
 filename: "cantos-populares-de-mi-candelario-obeso-2010"
 ---
-La noche re una fietas
-Re Pura i limpia.
-Caliente taba er baile;
-Yo retraío,
-Lleno e la timirece
-Re un barba-limpio;
-Maj re repente
-Vire ciecta picúa
-Re arto copete.
-Me enamoré ar momento
-Re su gacvéza,
-I junto no soplamos
-Entre la ruea,
-A bailá un porro,
+La noche re una fietas<br>Re Pura i limpia.<br>Caliente taba er baile;<br>Yo retraío,<br>Lleno e la timirece<br>Re un barba-limpio;<br>Maj re repente<br>Vire ciecta picúa<br>Re arto copete.<br>Me enamoré ar momento<br>Re su gacvéza,<br>I junto no soplamos<br>Entre la ruea,<br>A bailá un porro,

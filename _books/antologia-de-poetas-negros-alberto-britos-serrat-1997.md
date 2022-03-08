@@ -5,16 +5,4 @@ author2:
 author3: 
 filename: "antologia-de-poetas-negros-alberto-britos-serrat-1997"
 ---
-Encerrémonos en nosotros
-hermano negro
-y bebamos nuestro vino,
-en afán de evadirnos
-de toda hostilidad.
-Hermano negro
-el vino es bueno
-y para nosotros
-blasfemar es malo,
-y as ansias
-nos enferman de impotencia
-al quebrarnos
-en nuestras vidas sin ecos.
+Encerrémonos en nosotros<br>hermano negro<br>y bebamos nuestro vino,<br>en afán de evadirnos<br>de toda hostilidad.<br>Hermano negro<br>el vino es bueno<br>y para nosotros<br>blasfemar es malo,<br>y as ansias<br>nos enferman de impotencia<br>al quebrarnos<br>en nuestras vidas sin ecos.
