@@ -1,0 +1,19 @@
+<!-- if page.author is multiple and book.author is multiple too -->
+{% assign authors_page = page.author | split:'; ' %}
+{% if authors_page[1] %}
+    {% for book in site.data.booksa %}
+        {% assign authors_book = book.Author | split: ';' %}
+        {% if authors_book contains authors_page[0] or authors_book contains authors_page[1] %}
+            {{ book.Title }}
+        {% endif %}
+    {% endfor %}
+{% else %}
+<!-- if page.author is one and book.author is multiple  -->
+    {% for book in site.data.booksa %}
+        {% assign authors_book = book.Author | split: '; ' %}
+        {{ authors_book | split: ':'}}
+        {% if authors_book contains "Sanders, Mark A." %}
+            {{ page.author }}
+        {% endif %}
+    {% endfor %}
+{% endif %}

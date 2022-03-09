@@ -1,0 +1,18 @@
+<!-- checking if single or multiple authors in database -->
+{% for book in site.data.booksa %}
+    {% assign authors_book = book.Author | split:'; ' %}
+    {% if authors_book[1] %}
+        - {{ authors_book | join: "; "}}
+    {% else %}
+        + {{ book.Author }}
+    {% endif %}
+{% endfor %}
+<br>
+<br>
+<!-- checking if single or multiple authors in page -->
+{% assign authors_page = page.author | split:'; ' %}
+{% if authors_page[1] %}
+    - {{ authors_page | join: "; "}}
+{% else %}
+    + {{ page.author }}
+{% endif %}
