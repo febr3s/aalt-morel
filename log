@@ -14,3 +14,21 @@ March 6
 March 7
 - Resolví el tema de los line break en los poemas
 - Comencé la agregación de los nuevos libros que mandó Carlos
+
+March 9
+
+iniciada la adaptación a Zotero. listo sin links el enderezamiento de los loop de autores por obra
+
+
+La razón por la que no muestra los libros del autor era lo del espacio, pero es necesario el woraround de todas maneras para hacer como condición que contains una variable
+
+Recuperando este code snipet de filtrar por variable empty `download is {% if book.download == "" or book.download == nil %}blank{% else %}"{{ book.download }}"{% endif %}`
+
+===== lista =====
+
+Agregar a script: 
+
+- Agregar underscore a variable "File Attachments"
+- Copiar "File Attachments" a carpeta y cambiarles el nombre
+
+==================

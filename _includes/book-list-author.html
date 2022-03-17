@@ -1,0 +1,18 @@
+<!-- if page.author is multiple and book.author is multiple too -->
+{% assign authors_page = page.author | split:'; ' %} <!-- convierte los autores de la page en un array -->
+{% if authors_page[1] %} <!-- verifica si la page tiene more than one author -->
+    {% for book in site.data.booksa %} <!-- busca entre los libros -->
+        {% assign authors_book = book.Author | split: ';' %} <!-- convierte los autores de los libros en un array -->
+        {% if authors_book contains authors_page[0] or authors_book contains authors_page[1] %} <!-- verifica si cualquiera de los autores del array en el libro coincide con alguno de los autores del array en la page -->
+            {{ book.Title }}
+        {% endif %}
+    {% endfor %}
+{% else %}
+<!-- if page.author is one and book.Author is one or multiple  -->
+    {% for book in site.data.booksa %}
+        {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en arrays -->
+        {% if authors_book contains page.author %} <!-- verifica si cualquiera de los autores del array en el libro coincide con the only author on the page -->
+            {{ book.Title }}
+        {% endif %}
+    {% endfor %}
+{% endif %}

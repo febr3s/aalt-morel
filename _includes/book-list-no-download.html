@@ -1,0 +1,10 @@
+  <!--lista 1 -->
+        <div class="row">
+            <!--LOOP DE LISTA 1-->
+            {% assign books = site.data.books %}
+            {% for book in books %}
+            {% if book.download == "" or book.download == nil %}
+            {% include book-list-base %}
+            {% endif %}
+            {% endfor %}
+        </div>

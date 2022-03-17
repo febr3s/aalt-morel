@@ -1,0 +1,7 @@
+{% for book in site.data.booksa %}
+    {% assign authors_book = book.Author | split: '; ' %}
+    {% assign authors_page = page.author | split: '; ' %}
+    {% if authors_book contains page.author %}
+        {{ book.Title }}
+    {% endif %}
+{% endfor %}
