@@ -21,7 +21,7 @@ for book in books:
 	# the next lines create the different components of the url for the title
 	title_raw = str(book[4]) 
 	title_split = title_raw.split(" ")
-	title_short = (title_split[:5])
+	title_short = (title_split[:4])
 	title = "-".join(title_short)
 
 	year = str(book[2])

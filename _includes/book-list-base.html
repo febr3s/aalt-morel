@@ -1,6 +1,7 @@
+{% assign authors_all = book.Author | split: '; ' %}
 <div class="basis">
     <div class="container">
-        <img src="file://{{ book.File_Attachments }}" alt="{{ book.Title }}" class="image sombra">
+        <img src="{{BASE_PATH}}/assets/img/{{ book.img }}" alt="{{ book.Title }}" class="image sombra">
         <div class="overlay">
             <div class="text">
                 {% include book-list-metadata.html %}
@@ -9,6 +10,12 @@
     </div>
     <div class="price">
         <div class="title">{{ book.Title }}<br></div>
-        <div class="autor">{{ book.Author }}</div>
+        <div class="autor">
+            {% for author_raw in authors_all %}
+                {% assign author_firstlast = author_raw | split: ', ' %}
+                {{ author_firstlast | reverse | join: " " }}
+                {% unless forloop.last == true %} + {% endunless %}
+            {% endfor %}
+        </div>
     </div>
 </div>

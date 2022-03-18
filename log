@@ -24,11 +24,22 @@ La razón por la que no muestra los libros del autor era lo del espacio, pero es
 
 Recuperando este code snipet de filtrar por variable empty `download is {% if book.download == "" or book.download == nil %}blank{% else %}"{{ book.download }}"{% endif %}`
 
-===== lista =====
+March 15
 
-Agregar a script: 
+- Book pages generator script updated to work with Zotero csv (pendientes the other page generators)
+- Added a script to be able to use the two-word columns
+- Added a script to automatically copy the cover image from Zotero to the repository folder, and rename it with the slugized book info
+- Updated the includes, and created a book-list-base
 
-- Agregar underscore a variable "File Attachments"
-- Copiar "File Attachments" a carpeta y cambiarles el nombre
+March 16
 
-==================
+- Enderezar nombres de autores en book-list-base (done)
+- Generar los nombres correctos de imagen y de url en book-list-metadata (done)
+- Ajustado el script de copia de images a los actual columns and folders
+
+March 18
+
+- Adjust the image file name
+- Adjust the fields in the book layout
+- Adjust the remaining scripts
+
