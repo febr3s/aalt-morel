@@ -1,7 +1,8 @@
 {% assign authors_all = book.Author | split: '; ' %}
+{% include book-list-url-img.html %}
 <div class="basis">
     <div class="container">
-        <img src="{{BASE_PATH}}/assets/img/{{ book.img }}" alt="{{ book.Title }}" class="image sombra">
+        <img src="{{ img-url }}" alt="{{ book.Title }}" class="image sombra">
         <div class="overlay">
             <div class="text">
                 {% include book-list-metadata.html %}

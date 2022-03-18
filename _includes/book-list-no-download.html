@@ -4,7 +4,7 @@
             {% assign books = site.data.books %}
             {% for book in books %}
             {% if book.download == "" or book.download == nil %}
-            {% include book-list-base %}
+            {% include book-list-base.html %}
             {% endif %}
             {% endfor %}
         </div>
