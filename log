@@ -31,7 +31,7 @@ March 15
 - Added a script to automatically copy the cover image from Zotero to the repository folder, and rename it with the slugized book info
 - Updated the includes, and created a book-list-base
 
-March 16
+March 17
 
 - Enderezar nombres de autores en book-list-base (done)
 - Generar los nombres correctos de imagen y de url en book-list-metadata (done)
@@ -40,6 +40,36 @@ March 16
 March 18
 
 - Adjust the image file name (done)
-- Adjust the metadata fields
-- Adjust the fields in the book layout
+- Adjust the metadata fields (done)
+- Adjust background (done)
+
+March 19
+
+- Adjust the fields in the book layout (done)
+	- Incluir en los renamed fields Library Catalog > Library, Url > Download (done)
+
+March 21
+
 - Adjust the remaining scripts
+	- Author variation (done)
+	- Guardar en carpeta aparte (done)
+	
+	- Add conditionals to not create empty files (done)
+- Add links to book layout metadata (done)
+- Acomodar layout de autores (done)
+- Acomodar include de relacionados (done)
+- Generar title correcto en authors page (done)
+- Generar nombres de archivo more unique (done)
+
+March 22
+- Actualizar nombre de data file en layouts
+- Actualizar nombre de data file
+- Referenciar archivo correcto en site.data.books
+- Borrar archivo .booksa, tratar de recuperar antiguo archivo de data
+
+# Futuro
+- Activar pages de Date
+- Crear plantilla nueva y traducir
+- Restrict the authors to four
+- Arreglar el link en la portada del libro en el layout de book
+- Hacer un workaound para los distintos tipos de archivo (epub, txt)

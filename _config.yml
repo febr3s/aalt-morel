@@ -17,16 +17,16 @@ author :
 collections:
   cities:
     output: true
-    permalink: /ciudades/:name
+    permalink: /cities/:name
   books:
     output: true
     permalink: /obras/:name
   authors:
     output: true
-    permalink: /autoras/:name
+    permalink: /authors/:name
   publishers:
     output: true
-    permalink: /imprentas-y-editoriales/:name
+    permalink: /publishers/:name
   repositories:
     output: true
     permalink: /repositorios/:name

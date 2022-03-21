@@ -10,11 +10,12 @@ books = data.values.tolist()
 
 # Loop through each name, create .md file, set contents to string
 for book in books:
-	title = str(book[13])
-	url = slugify(title)
-	file_name = f'_authors/{url}.md'
+	if book[31] != "":
+		title = str(book[31])
+		url = slugify(title)
+		file_name = f'_repositories/{url}.md'
 
-	with open(file_name, 'w', encoding="utf-8") as f:
-		f.write(f'---\ntitle: {title}\n---')
-		f.close()
-	print(f'{file_name} saved')
+		with open(file_name, 'w', encoding="utf-8") as f:
+			f.write(f'---\ntitle: "{title}"\n---')
+			f.close()
+		print(f'{file_name} saved')

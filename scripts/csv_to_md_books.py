@@ -3,7 +3,7 @@ import pandas as pd
 from slugify import slugify
 
 # Create a dataFrame from csv file
-data = pd.read_csv("_data/booksa.csv", sep=',', engine ='python', encoding="utf-8").fillna('')
+data = pd.read_csv("_data/books.csv", sep=',', engine ='python', encoding="utf-8").fillna('')
 
 # Set the titles column to a list
 books = data.values.tolist()
@@ -24,7 +24,7 @@ for book in books:
 	title_short = (title_split[:4])
 	title = "-".join(title_short)
 
-	year = str(book[2])
+	year = str(book[11])
 
 	url_raw = title+"-"+author+"-"+year
 	
