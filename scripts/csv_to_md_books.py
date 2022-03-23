@@ -23,6 +23,7 @@ for book in books:
 	title_split = title_raw.split(" ")
 	title_short = (title_split[:4])
 	title = "-".join(title_short)
+	xcrpt = str(book[36])
 
 	year = str(book[11])
 
@@ -36,6 +37,6 @@ for book in books:
 
 
 	with open(file_name, 'w', encoding="utf-8") as f:
-		f.write(f'---\ntitle: "{title_raw}"\nauthor: {author_raw}\nfilename: "{url}"\n---\n')
+		f.write(f'---\ntitle: "{title_raw}"\nauthor: {author_raw}\n---\n{xcrpt}')
 		f.close()
 	print(f'{file_name} saved')

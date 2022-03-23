@@ -70,7 +70,7 @@ March 23
 - Layout y metadata repositorio (done) 
 - Restrict the authors to four (done, actually three)
 - Arreglar el link en la portada del libro en el layout de book (done)
-- Incorporar extracto en autogeneración de páginas
+- Incorporar extracto en autogeneración de páginas (done)
 
 
 # Futuro
@@ -83,3 +83,4 @@ March 23
 - Configurar para que dé error si no están todos los campos bien
 - Add elipsis for books with more than three authors
 - Hacer script que borre el double quote del csv
+- Script para optimizar pdf's

@@ -284,6 +284,10 @@ label:hover.button, button:hover {
 .ficha-extract {
   padding-left: 15.1%; }
 
+.ficha-extract p {
+  margin-top: .5rem;
+}
+
 .proyecto-tienda ul {
   line-height: 1;
   font-size: 1em;

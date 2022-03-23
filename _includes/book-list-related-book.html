@@ -22,7 +22,7 @@
     {% for book in site.data.booksa %}
         {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en arrays -->
         {% if authors_book contains page.author %} <!-- verifica si cualquiera de los autores del array en el libro coincide con the only author on the page -->
-            {{ book.Title }}
+            {% include book-list-base.html %}
         {% endif %}
     {% endfor %}
 {% endif %}
