@@ -7,7 +7,7 @@
 </div> <!--imprime la presentation con los autores-->
 
 <div class="row">
-{% for book in site.data.booksa %}
+{% for book in site.data.books %}
     {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en arrays -->
     {% if authors_book contains page.title %} <!-- verifica si cualquiera de los autores del array en el libro coincide con the only author on the page -->
         {% include book-list-base.html %}

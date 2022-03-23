@@ -1,5 +1,5 @@
 <!-- checking if single or multiple authors in database -->
-{% for book in site.data.booksa %}
+{% for book in site.data.books %}
     {% assign authors_book = book.Author | split:'; ' %}
     {% if authors_book[1] %}
         - {{ authors_book | join: "; "}}

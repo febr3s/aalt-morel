@@ -61,15 +61,25 @@ March 21
 - Generar title correcto en authors page (done)
 - Generar nombres de archivo more unique (done)
 
-March 22
-- Actualizar nombre de data file en layouts
-- Actualizar nombre de data file
-- Referenciar archivo correcto en site.data.books
-- Borrar archivo .booksa, tratar de recuperar antiguo archivo de data
+March 23
+- Actualizar nombre de data file en layouts (done)
+- Actualizar nombre de data file (done)
+- Layout editorial (done)
+- Tratando de arreglar el bug de los fields en el csv, probablemente porque se corre de last el script de cambio de nombre de columna (done, es un paso adicional al importar a libre office, que es eliminar semicolon como separador)
+- Layout ciudad (done)
+- Layout y metadata repositorio (done) 
+- Restrict the authors to four (done, actually three)
+- Arreglar el link en la portada del libro en el layout de book (done)
+- Incorporar extracto en autogeneración de páginas
+
 
 # Futuro
+- Script para copiar pdf
+- Script para upload a Archive
 - Activar pages de Date
 - Crear plantilla nueva y traducir
-- Restrict the authors to four
-- Arreglar el link en la portada del libro en el layout de book
 - Hacer un workaound para los distintos tipos de archivo (epub, txt)
+- Acomodar repositorio a múltiples valores
+- Configurar para que dé error si no están todos los campos bien
+- Add elipsis for books with more than three authors
+- Hacer script que borre el double quote del csv

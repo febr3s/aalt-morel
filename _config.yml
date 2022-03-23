@@ -29,7 +29,7 @@ collections:
     permalink: /publishers/:name
   repositories:
     output: true
-    permalink: /repositorios/:name
+    permalink: /repositories/:name
   periods:
     output: true 
     permalink: /periodos/:name

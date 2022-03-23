@@ -1,4 +1,4 @@
-{% for book in site.data.booksa %}
+{% for book in site.data.books %}
 {% if book.Title == page.title %}
   {% assign authors_all = book.Author | split: '; ' %}
 

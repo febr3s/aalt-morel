@@ -1,12 +1,12 @@
- {% for book in site.data.booksa %}
-      {% if book.Download != "" and book.download != nil %} 
-      <a class="morel" href="{{page.Download}}"><i class="fa fa-file-pdf-o" style="padding: 1em 0em"></i></a><br>
-      {% endif %}
-      {% if book.epub %}
-        <a class="morel" href="{{page.epub}}"><i class="fa-file-text-o" style="padding: 1em 0em"></i></a>
-        {% endif %}
-        {% if book.Library %}
-        <a class="morel" href="{{book.Library}}"><i class="fa fa-book" style="padding: 1em 0em"></i></a>
-        {% endif %}
-    
+ {% for book in site.data.books %}
+ {% if book.Title == page.title %}
+    {% if book.Download != "" and book.Download != nil %} 
+    <a class="morel" href="{{ book.Download }}" target="_blank" download><i class="fa fa-file-pdf-o"></i></a>
+    {%endif%}
+    {% if book.Library != "" and book.Library != nil%}
+    <br>
+    <br>
+    <a class="morel" href="{{ book.Library }}"><i class="fa fa-book"></i></a>
+    {% endif %}
+{% endif %}
 {% endfor %}
