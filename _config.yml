@@ -1,18 +1,18 @@
-title: MOREL
-description: obras latinoamericanas de dominio público
+title: EsAT
+description: obras de escritores afrolatinoamericanes en traducción
 permalink: /:categories/:year/:month/:day/:title:output_ext
 img: logo.png
 background: trama.png
 
 author : 
-  name : MOREL
-  site: https://morel.la
-  description : Metadatos de Obras para Repositorios Electrónicos Latinoamericanos impulsa la creación de archivos digitales de libre acceso.
+  name : EsAT
+  site: https://esat.nd.edu
+  description : EsAT es un recurso para lectores, escritores, editores, estudiantes y profesores interesados en la cultura afroamericana y latinoamericana en general, y afrolatinoamericana en particular. Reúne fragmentos de obras en lengua original y traducidas, de autores negres latinoamericanos. Algunas de estas obras están también disponibles para su descarga en su totalidad, por encontrarse en dominio público o por haber sido dispuesto así por sus editores originales. La colección se organiza por listas dinámicas, que agrupan las obras de acuerdo a características en común (autores, ciudad de edición, editorial, nacionalidad de autores, fecha de edición y repositorio digital). Pero también cuenta con un buscador que permite encontrar obras directamente.
   image : avatar.png
-  email : proyectomorel@gmail.com
+  email : esatraduccion@gmail.com
   github : 
   twitter : 
-  instagram: morelrep
+  instagram: esatraduccion
 
 collections:
   cities:

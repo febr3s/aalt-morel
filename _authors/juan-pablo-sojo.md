@@ -1,3 +1,0 @@
----
-title: Juan Pablo Sojo
----

@@ -72,6 +72,15 @@ March 23
 - Arreglar el link en la portada del libro en el layout de book (done)
 - Incorporar extracto en autogeneración de páginas (done)
 
+April 10
+
+Los autores con pseudónimo de una sola palabra deben nombrarse como si ese fuera un apellido y el nombre de pila fuera su nombre completo. Si no, no sirven los array de apellido.
+
+Un buen rato tratando de sustituir el abre-cierra de libreoffice por un script. Finalmente lo conseguí con una combinación del paquete clevercsv y el módulo os. Desde la línea de comandos, se usa como `standardize clevercsv [output] [input]`
+
+No pueden haber ciertos caracteres en el título hasta nuevo aviso (el & enchava la parte en Memoria y resistencia)
+
+Habría que sumar un find and replace para poner las guillemets, poniendo en zotero <<>>. 
 
 # Futuro
 - Script para copiar pdf
@@ -84,3 +93,47 @@ March 23
 - Add elipsis for books with more than three authors
 - Hacer script que borre el double quote del csv
 - Script para optimizar pdf's
+- Script para seleccionar condicionalmente el short title
+- Layout para ediciones bilingües
+- Layout para libros sin portada
+- Autoactualización de archivo Zotero
+- Script para chequear que todos los archivos adjuntos son procesables
+- ¿Habrá una forma de diferenciar cuando Extra se refiere a la nacionalidad de los autores y cuando se refiere a la nacionalidad de los traductores?
+- Crear un script para identificar si hay traducciones disponibles de una obra o no
+- Banderita en el book layout, con link a libros publicados en ese país
+- Agregar idioma a la nomenclatura del archivo md
+- Condicionar que haya link en la metadata solo si hay más de uno
+- Perfeccionar lo del título corto
+- Perfeccionar lo de primera edición
+- Agregar opción de flipbook para pantallas medianas a grandes
+- Agregar ilustraciones en un slideshow junto a la portada, quizá con una flechita opcional que se ilumine
+- Hay que agregar un boolean para identificar registros como traducciones o no
+- Poner que el lugar sea opcional en el render de la ficha del libro
+- Para encontrar un error: ponerlo por orden de date added, buscar el último procesado, el siguiente es el del error. Recuerda siempre actualizar el archivo.
+- Los scripts deberían detectar si hay algo con doble signo de interrogación
+- También deben detectar si hay algún png coleado
+- Detectar si hay espaciado doble (  ) o punto pegado de espacio, porque eso va a confundir las convenciones de nombre
+
+# Corto plazo
+
+- Probar versión en producción
+- Generar las listas del index
+ - Últimas traducciones publicadas
+ - portugués
+ - español
+ - inglés
+- Generar las páginas con listas dinámicas
+ - las existentes
+ - por idioma
+ - 
+5/17
+
+- Corregir el slugize cuando el título tiene signo de igual o signo de dos puntos LISTO
+
+Una muy divertida aventura tratando de descifrar cómo remover más de un caracter con el filtro remove. Llegué a un end road porque python y ruby filtran distinto, y no encontré workaround para permitir títulos con signo de igual y dos puntos, porque el array del título que uso para replicar la regla de naming se altera. La solución provisional es no usar dos puntos combinados con signo de igual. Y a mediano-largo plazo comenzar la transición de Python a Ruby para generar los archivos .md a partir del csv, etcétera. Son ocho scripts así que no creo que sea mortal.
+
+Update: Resulta que todo el peo era de espaciado. Volví al approach de quitar los dos puntos y los signos de igual, aunque no sé por qué en otros libros eso no da problema.
+
+Igual todo eso se evita si las convenciones de nombre dan el mismo resultado al generar los archivos y al generar los links.
+
+- Corregir el glitchito del lugar de publicación en el rollover de los libros LISTO

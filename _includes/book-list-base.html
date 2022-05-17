@@ -12,7 +12,7 @@
     <div class="price">
         <div class="title">{{ book.Title }}<br></div>
         <div class="autor">
-            {% for author_raw in authors_all %}
+            {% for author_raw in authors_all | limit: 3 %}
                 {% assign author_firstlast = author_raw | split: ', ' %}
                 {{ author_firstlast | reverse | join: " " }}
                 {% unless forloop.last == true %} + {% endunless %}

@@ -1,3 +1,0 @@
----
-title: Luiz Silva, Cuti
----

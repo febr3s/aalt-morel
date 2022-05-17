@@ -1,3 +1,0 @@
----
-title: Rómulo Bustos Aguirre
----

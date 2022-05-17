@@ -1,3 +1,0 @@
----
-title: Ana Maria Gonçalves
----
