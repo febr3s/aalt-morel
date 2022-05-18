@@ -2,7 +2,7 @@ title: EsAT
 description: obras de escritores afrolatinoamericanes en traducción
 permalink: /:categories/:year/:month/:day/:title:output_ext
 img: logo.png
-background: trama-5.jpg
+background: trama.png
 
 author : 
   name : EsAT

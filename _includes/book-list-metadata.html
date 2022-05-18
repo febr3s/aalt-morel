@@ -3,9 +3,9 @@
 <a href="{% include book-list-url-page.html %}" title="">
     <i class="fa fa-eye see-and-download morel"></i>
 </a>
-{% if book.Url %}
+{% if book.Download %}
 <i class="fa fa-download clear"></i>
-<a href="{{ book.Url }}">
+<a href="{{ book.Download }}">
     <i class="fa fa-download see-and-download morel"></i>
 </a>
 {% endif %}
