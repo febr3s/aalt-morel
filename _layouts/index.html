@@ -24,7 +24,7 @@ layout: default
 
         <!--Últimas ocho traducciones registradas -->        
         <div class="row obras">
-            <h2 class="index">Las ocho traducciones más recientes</h2>
+            <h2 class="index">Algunas traducciones contemporáneas</h2>
         </div>
         {% include book-list-all.html %}
        
@@ -33,10 +33,12 @@ layout: default
         <div class="row obras">
             <h2 class="index">Algunas obras descargables</h2>
         </div>
+        {% include book-list-download.html %}
 
         <!--No descargables-->
         <div class="row obras">
             <h2 class="index">Algunas obras de referencia</h2>
         </div>
+         {% include book-list-no-download.html %}
         
        

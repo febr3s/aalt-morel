@@ -113,16 +113,13 @@ Habría que sumar un find and replace para poner las guillemets, poniendo en zot
 - Los scripts deberían detectar si hay algo con doble signo de interrogación
 - También deben detectar si hay algún png coleado
 - Detectar si hay espaciado doble (  ) o punto pegado de espacio, porque eso va a confundir las convenciones de nombre
+- Detectar si hay algún link con un proxi
 
 # Corto plazo
 
 - Generar las páginas con listas dinámicas
  - las existentes
-- Generar las listas del index
- - Últimas traducciones publicadas
- - portugués
- - español
- - inglés
+- Quitar links a biblioteca que tengan proxi
 
  # Mediano plazo
 
@@ -131,9 +128,10 @@ Habría que sumar un find and replace para poner las guillemets, poniendo en zot
  - por nacionalidad de le escritore
  - por año de edición
 
-- Crear nuevo theme
+- Crear nuevo theme a partir de modificaciones al original para la construcción de EsAT
+- Agregar link externo al repositorio
+- Encontrar una manera de no mostrar los autores que se crearon por error LISTO
 
-- Agregar botón de descarga al rollover
 
 5/17
 
@@ -157,13 +155,35 @@ Igual todo eso se evita si las convenciones de nombre dan el mismo resultado al 
 
 - Nota que todo lo que en el theme dentro de colecciones (folders con prefijo `_` en la carpeta `copy content to main folder`) no se copia como md sino como html.
 
-Entonces no puedo intervenir el theme copiando un include o un layout, a menos que...
+Entonces no puedo intervenir el theme copiando un include o un layout, a menos que... sí, solo tenía que reemplazar el html por un md y después traerme el layout y los includes correspondientes.
 
-- Generar las páginas con listas dinámicas
+- Agregar botón de descarga al rollover LISTO
+
+- Generar las páginas con listas dinámicas LISTO
  - Autor CASI LISTO (falta el link al libro para dispositivos móviles)
     - LISTO (en el futuro mosca con las variables repetidas)
- - Ciudad
- 
+ - Ciudad CASI LISTO (hay que resolver lo de las páginas vacías)
+    -  LISTO
+ - Año de edición LISTO
+ - Imprenta o editorial LISTO
+ - Repositorio LISTO
+
+- Generar las listas del index
+ - Últimas traducciones publicadas
+ - portugués
+ - español
+ - inglés
+ - descargables
+ - no descargables
+
+- Hay que pensar una forma de corregir los criterios vacíos... o al menos no mostrarlos
+    - Se crea un array con el criterio correspondiente, y se usa el filtro `contains` para excluir los que no. Para borrar esas paginitas sería la operación contraria y proceder manualmente hasta que encuentre un script para hacerlo.
+    - Para crear un array a partir de un for loop hay que crear la variable vacía y después redefinir la variable en cada loop con push
+
 - Pomodoros
+
+...
+
+...
 
 ..

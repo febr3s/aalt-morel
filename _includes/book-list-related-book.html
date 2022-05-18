@@ -5,7 +5,7 @@
     <h2 class="index">Obras de {% for author_raw in authors_all_page | limit: 3 %}
       {% assign author_firstlast = author_raw | split: ', ' %}
       {{ author_firstlast | reverse | join: " " }}</a>
-      {% unless forloop.last == true %} y/o {% endunless %}
+      {% unless forloop.last == true %} + {% endunless %}
     {% endfor %} en {{ site.title }}</h2>
 </div> <!--imprime la presentation con los autores-->
 

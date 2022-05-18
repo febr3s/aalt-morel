@@ -3,8 +3,8 @@
             <!--LOOP DE LISTA 1-->
             {% assign books = site.data.books %}
             {% for book in books %}
-            {% if book.download %}
-            {% include book-list-base %}
+            {% if book.Download %}
+            {% include book-list-base.html %}
             {% endif %}
             {% endfor %}     
         </div>

@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+{% assign items_grouped = site.data.books | group_by: "Date" | sort: 'name' %}
+  {% for Date in items_grouped %}
+    <h3>{{Date.name}}</h3>
+    {% for book in Date.items %}
+        <a href="{% include book-list-url-page.html %}" title=""><p>{{book.Title}}</p></a>
+    {% endfor %}
+  {% endfor %}

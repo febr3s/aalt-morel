@@ -3,7 +3,7 @@
             <!--LOOP DE LISTA 1-->
             {% assign books = site.data.books %}
             {% for book in books %}
-            {% if book.download == "" or book.download == nil %}
+            {% if book.Download == "" or book.Download == nil %}
             {% include book-list-base.html %}
             {% endif %}
             {% endfor %}
