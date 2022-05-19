@@ -118,7 +118,7 @@ Habría que sumar un find and replace para poner las guillemets, poniendo en zot
 # Corto plazo
 
 - Generar las páginas con listas dinámicas
- - las existentes
+ - las existentes LISTO
 - Quitar links a biblioteca que tengan proxi
 
  # Mediano plazo
@@ -127,7 +127,10 @@ Habría que sumar un find and replace para poner las guillemets, poniendo en zot
  - por idioma
  - por nacionalidad de le escritore
  - por año de edición
-
+- Listas del index
+ - portugués
+ - español
+ - inglés
 - Crear nuevo theme a partir de modificaciones al original para la construcción de EsAT
 - Agregar link externo al repositorio
 - Encontrar una manera de no mostrar los autores que se crearon por error LISTO
@@ -144,7 +147,6 @@ Update: Resulta que todo el peo era de espaciado. Volví al approach de quitar l
 Igual todo eso se evita si las convenciones de nombre dan el mismo resultado al generar los archivos y al generar los links.
 
 - Corregir el glitchito del lugar de publicación en el rollover de los libros LISTO
-- Actualizadas páginas de búsqueda y de about. Para about hay que editar la página .md y ver cómo se combina con el recuadro de promoción que está al final de cada página. 
 - Preseleccioné otra trama más decente
 - Voy a dejar en stand-by lo de obras por categoría en el index
 - Probar versión en producción LISTO
@@ -169,12 +171,10 @@ Entonces no puedo intervenir el theme copiando un include o un layout, a menos q
  - Repositorio LISTO
 
 - Generar las listas del index
- - Últimas traducciones publicadas
- - portugués
- - español
- - inglés
- - descargables
- - no descargables
+ - Últimas traducciones publicadas LISTO
+ - descargables LISTO
+
+- Actualizar layout de página de todas las obras LISTO
 
 - Hay que pensar una forma de corregir los criterios vacíos... o al menos no mostrarlos
     - Se crea un array con el criterio correspondiente, y se usa el filtro `contains` para excluir los que no. Para borrar esas paginitas sería la operación contraria y proceder manualmente hasta que encuentre un script para hacerlo.
@@ -186,4 +186,25 @@ Entonces no puedo intervenir el theme copiando un include o un layout, a menos q
 
 ...
 
-..
+...
+
+...
+
+.
+
+5/19
+
+...
+...
+
+
+
+- Me puse al día con los correos y con los libros de la biblioteca. 
+
+ Generar las listas del index
+ - Últimas traducciones publicadas LISTO
+ - descargables LISTO
+ - no descargables LISTO
+
+ - Actualizadas páginas de búsqueda y de about. Para about hay que editar la página .md y ver cómo se combina con el recuadro de promoción que está al final de cada página. 
+   - Primero tuve que hacer un workaround, del que estoy muy orgulloso, para tener en la carpeta principal un archivo .md que se llama site-description, que cuando se construye el site se copia como html a la carpeta _site, y que con un script se copia a su vez a la carpeta _includes, y es llamada por el layout _about, para finalmente ser llamada por el about.md, que está en el home

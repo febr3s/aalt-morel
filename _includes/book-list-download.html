@@ -1,10 +1,9 @@
   <!--lista 1 -->
         <div class="row">
             <!--LOOP DE LISTA 1-->
-            {% assign books = site.data.books %}
-            {% for book in books %}
-            {% if book.Download %}
+            {% assign books = site.data.books | where_exp: "item", "item.Download" %}
+            {% for book in books | limit: 7 %}
             {% include book-list-base.html %}
-            {% endif %}
-            {% endfor %}     
+            {% endfor %}
+            {% include book-list-seemore.html %}     
         </div>

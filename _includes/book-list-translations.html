@@ -1,7 +1,7 @@
   <!--lista 1 -->
         <div class="row">
             <!--LOOP DE LISTA 1-->
-            {% assign books = site.data.books | where_exp: "item", "item.Download == '' or item.Download == nil" %}
+            {% assign books = site.data.books | sort: "Date" | reverse | where: "Series", "tr" %}
             {% for book in books | limit: 7 %}
             {% include book-list-base.html %}
             {% endfor %}

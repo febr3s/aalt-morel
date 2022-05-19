@@ -35,9 +35,13 @@ for book in books:
 
 	file_name = str(url)+".jpg"
 
+	# this is the shutil module to copy the files
+
+
 	src = str(book[37])
 
 	path = './assets/img/'
+
 
 	dst = path + file_name
 
