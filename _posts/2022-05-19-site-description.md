@@ -1,3 +1,7 @@
+---
+layout: about
+---
+
 Metadatos de Obras para Repositorios Electrónicos Latinoamericanos es un archivo de descargas gratuitas de cultura latinoamericana. Específicamente, libros en formatos digitales de procedencia confiable que se encuentran en el dominio público. 
 
 Las obras y sus metadatos (autor, imprenta o editorial, fecha de publicación, etc.) están organizadas en  listas dinámicas. Esto permite navegar de forma intuitiva la plataforma. El usuario puede encontrar de forma eficaz y amena un contenido específico que necesita. Pero también puede encontrarse con contenidos desconocidos e inesperados en una experiencia de tipo _rabbit hole_.

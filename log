@@ -197,6 +197,8 @@ Entonces no puedo intervenir el theme copiando un include o un layout, a menos q
 ...
 ...
 
+...
+
 
 
 - Me puse al día con los correos y con los libros de la biblioteca. 
@@ -208,3 +210,9 @@ Entonces no puedo intervenir el theme copiando un include o un layout, a menos q
 
  - Actualizadas páginas de búsqueda y de about. Para about hay que editar la página .md y ver cómo se combina con el recuadro de promoción que está al final de cada página. 
    - Primero tuve que hacer un workaround, del que estoy muy orgulloso, para tener en la carpeta principal un archivo .md que se llama site-description, que cuando se construye el site se copia como html a la carpeta _site, y que con un script se copia a su vez a la carpeta _includes, y es llamada por el layout _about, para finalmente ser llamada por el about.md, que está en el home
+(commit)
+- Actualicé data y pasé todos los scripts
+- Estoy rehaciendo todo el approach... porque puede ser mejor simplemente escribir el about en uno de los posts. Borré el import del script nuevo y voy a tratar de activar el blog.
+- El approach del post no funcionó del todo, salvo para aprender que los post no se muestran si no tienen formato de post en el nombre de archivo y definición de layout y creo que de título.
+- Probé el approach de una colección de "abouts". Funcionó para el include de promoción... después de un rato de confusión total con un "ver más" fantasma que aparecía como una verruga en medio de la frente. Ahora hay que armar el flujo con la página de about. También quedó pendiente pulir el layout de ese `ver mas` en el include de promotion.
+- Pendiente page de agregar y maybe la page by country. Also updating the images to match with our corpus. Also pages for every list.

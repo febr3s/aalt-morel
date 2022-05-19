@@ -1,6 +1,11 @@
-Metadatos de Obras para Repositorios Electrónicos Latinoamericanos es un archivo de descargas gratuitas de cultura latinoamericana. Específicamente, libros en formatos digitales de procedencia confiable que se encuentran en el dominio público. 
+---
+title: description
+---
+EsAlT es un recurso para lectores, escritores, editores, estudiantes y profesores interesades en la cultura afroamericana y latinoamericana en general, y afrolatinoamericana en particular. Reúne fragmentos de obras en lengua original y traducidas, de autores negres latinoamericanes. 
+<!-- more -->
+Algunas de estas obras están también disponibles para su descarga en su totalidad, por encontrarse en dominio público o por haber sido dispuesto así por sus editores originales. 
 
-Las obras y sus metadatos (autor, imprenta o editorial, fecha de publicación, etc.) están organizadas en  listas dinámicas. Esto permite navegar de forma intuitiva la plataforma. El usuario puede encontrar de forma eficaz y amena un contenido específico que necesita. Pero también puede encontrarse con contenidos desconocidos e inesperados en una experiencia de tipo _rabbit hole_.
+La colección se organiza por listas dinámicas, que agrupan las obras de acuerdo a características en común (autores, ciudad de edición, editorial, nacionalidad de autores, fecha de edición y repositorio digital). Pero también cuenta con un buscador que permite encontrar obras directamente.
 
 Hoy hay aproximadamente {{ site.books.size }} libros disponibles en MOREL, organizados en {{ site.authors.size }} autores, {{ site.publishers.size }} imprentas y editoriales, y {{ site.repositories.size }} repositorios. Es un número modesto, que alcanza para facilitar el acceso a algunos contenidos. Pero MOREL es una plataforma escalable. Y en la medida que crezca los metadatos que se están almacenando permitirán conocer datos relevantes sobre tendencias macro de la literatura de la región.
 

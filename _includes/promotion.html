@@ -6,7 +6,10 @@
                     </h2>
                 </div>
                 <div class="ficha-extract" style="">
-                    <p>{{ site.author.description }}</p>
+                    {% for about in site.abouts | where: "title", "description" %}
+                    {{ about.excerpt }}
+                    {% endfor %}
+                    <a href="obras"><label class="button" for="lista-obras">&nbsp;VER +</label></a>
                 </div>
                 <div class="ficha-metadata">
                 </div>
