@@ -10,7 +10,7 @@
   {% endfor %}
     //
      Publicada en <a href="{{BASE_PATH}}/cities/{{ book.Place | slugify:"latin" }}" title="{{ book.Place }}">{{ book.Place }}</a> por <a href="{{BASE_PATH}}/publishers/{{ book.Publisher | slugify:"latin" }}" title="{{ book.Publihser }}">{{ book.Publisher }}</a>
-      en {{ book.Date }}{% if book.Edition %} // Publicada por primera vez en {{ book.Edition }}{% endif %} {% if book.Archive %}//
+      en {{ book.Date }}{% if book.Edition == book.Date %}. Primera edición{% else if %} // Publicada por primera vez en {{ book.Edition }}{% endif %} {% if book.Archive != "" and book.Archive != nil  %}//
       Recuperada por <a href="{{BASE_PATH}}/repositories/{{ book.Archive | slugify:"latin" }}" title="{{ book.Archive }}">{{ book.Archive }}</a>{% endif %}
 {% endif %}
 {% endfor %}

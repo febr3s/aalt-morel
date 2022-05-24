@@ -1,2 +1,2 @@
 import os
-os.system("clevercsv standardize --output _data/books_.csv _data/books.csv")
+os.system("clevercsv standardize --output _data/books.csv assets/data/books_zotero.csv")

@@ -5,7 +5,7 @@
     <h2 class="index">Obras de {% for author_raw in authors_all_page | limit: 3 %}
       {% assign author_firstlast = author_raw | split: ', ' %}
       {{ author_firstlast | reverse | join: " " }}</a>
-      {% unless forloop.last == true %} + {% endunless %}
+      {% unless forloop.last == true %} <small>y/o</small> {% endunless %}
     {% endfor %} en {{ site.title }}</h2>
 </div> <!--imprime la presentation con los autores-->
 
@@ -18,8 +18,9 @@
         {% endif %}
     {% endfor %}
 {% else %}
+
 <!-- if page.author is one and book.Author is one or multiple  -->
-    {% for book in site.data.booksa %}
+    {% for book in site.data.books %}
         {% assign authors_book = book.Author | split: '; ' %} <!-- convierte los autores de los libros en arrays -->
         {% if authors_book contains page.author %} <!-- verifica si cualquiera de los autores del array en el libro coincide con the only author on the page -->
             {% include book-list-base.html %}

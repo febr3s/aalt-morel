@@ -36,13 +36,7 @@ table {
   --background: #F9F9F9;
   --fondo: rgba(235, 235, 235, 0.4) ; }
 
-/*otros colores
-#f2ecff
-#ccc
-#faf8ff
-#faf8ff
-#8d8d8d
-*/
+
 html {
   font-size: 12px; }
 
@@ -169,6 +163,10 @@ label:hover.button, button:hover {
   color: var(--background);
   background: var(--color-2);
   border-style: none; }
+
+small {
+  font-size: 1.4rem;
+}
 
 .modal ul {
   list-style-type: square;
@@ -757,6 +755,16 @@ label:hover.button, button:hover {
 
   /* MEDIA QUERIES FOR AUTHOR PAGES */
 
+label.promotion {
+  font-size: 1.2rem;
+}
+
+.promotion {
+  text-align: right;
+  margin-bottom: -1.3rem;
+  margin-top: 1.3rem;
+}
+
 .autor-pagina {
   display: flex;
   flex-direction: row;
@@ -1152,7 +1160,7 @@ color: var(--background);
 
 
 .overlay {
-  background-color: rgba(42, 52, 37, 0.88);
+  background-color: rgba(0, 0, 0, 0.88);
 }
 
 /* footer */

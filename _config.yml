@@ -1,17 +1,17 @@
-title: EsAlT
+title: EsALT
 description: obras de escritores afrolatinoamericanes en traducción
 permalink: /:categories/:year/:month/:day/:title:output_ext
 img: logo.png
 background: trama-5.jpg
 
 author : 
-  name : EsAlT
+  name : EsALT
   site: https://esat.nd.edu
   image : avatar.png
   email : esaltraduccion@gmail.com
-  github : esaltraduccion
-  twitter : esaltraduccion
-  instagram: esaltraduccion
+  github : 
+  twitter : 
+  instagram: 
 
 excerpt_separator: "<!-- more -->"
 

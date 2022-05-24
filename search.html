@@ -13,7 +13,6 @@ layout: default
     {% for book in site.books %}
       "{{ book.url | slugify }}": {
         "title": "{{ book.title | xml_escape }}",
-        "descarga": "{{ book.descarga | xml_escape }}",
         "author": "{{ book.author | xml_escape }}",
         "content": {{ book.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ book.url | xml_escape }}"

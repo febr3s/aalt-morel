@@ -9,7 +9,7 @@
                     {% for about in site.abouts | where: "title", "description" %}
                     {{ about.excerpt }}
                     {% endfor %}
-                    <a href="obras"><label class="button" for="lista-obras">&nbsp;VER +</label></a>
+                    <div class="promotion"><a href="{{ BASE_PATH }}/about"><label class="button promotion" for="lista-obras">&nbsp;VER +</label></a></div>
                 </div>
                 <div class="ficha-metadata">
                 </div>

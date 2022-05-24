@@ -1,12 +1,16 @@
 ---
 title: description
 ---
-EsAlT es un recurso para lectores, escritores, editores, estudiantes y profesores interesades en la cultura afroamericana y latinoamericana en general, y afrolatinoamericana en particular. Reúne fragmentos de obras en lengua original y traducidas, de autores negres latinoamericanes. 
+EsAlT es un recurso para lectores, escritores, editores, estudiantes y profesores interesades en la cultura afroamericana y latinoamericana en general, y afrolatinoamericana en particular. Reúne portadas, fragmentos, pistas bibliotecarias y descargas digitales de obras de autores negres latinoamericanes en lengua original y traducidas. 
 <!-- more -->
-Algunas de estas obras están también disponibles para su descarga en su totalidad, por encontrarse en dominio público o por haber sido dispuesto así por sus editores originales. 
 
-La colección se organiza por listas dinámicas, que agrupan las obras de acuerdo a características en común (autores, ciudad de edición, editorial, nacionalidad de autores, fecha de edición y repositorio digital). Pero también cuenta con un buscador que permite encontrar obras directamente.
+La colección se organiza por listas dinámicas, que agrupan las obras de acuerdo a características en común ([autores]({{BASE_PATH}}/criterios/author), [ciudad de edición]({{BASE_PATH}}/criterios/city), [imprenta o editorial]({{BASE_PATH}}/criterios/publisher), [nacionalidad de autores]({{BASE_PATH}}/criterios/nationality), [fecha de edición]({{BASE_PATH}}/criterios/edition) y [repositorio digital]({{BASE_PATH}}/criterios/repository)). Pero también cuenta con un [buscador]({{BASE_PATH}}/search) que permite encontrar obras directamente.
 
-Hoy hay aproximadamente {{ site.books.size }} libros disponibles en MOREL, organizados en {{ site.authors.size }} autores, {{ site.publishers.size }} imprentas y editoriales, y {{ site.repositories.size }} repositorios. Es un número modesto, que alcanza para facilitar el acceso a algunos contenidos. Pero MOREL es una plataforma escalable. Y en la medida que crezca los metadatos que se están almacenando permitirán conocer datos relevantes sobre tendencias macro de la literatura de la región.
+Hoy hay aproximadamente {{ site.books.size }} libros disponibles en {{ site.title }}, organizados en {{ site.authors.size }} autores, {{ site.publishers.size }} imprentas y editoriales, y {{ site.repositories.size }} repositorios. Además, 31 obras más se encuentran en proceso. 
 
-Si llegaste hasta aquí, probablemente eres una de las usuarias y beneficiarias de la plataforma que van a animarse a [sugerir nuevos contenidos]({{BASE_PATH}}/agregar) para ayudar a MOREL a crecer. MOREL ha recorrido un buen trecho, pero todavía queda muchísimo material *ya digitalizado* disperso en la Web de libros latinoamericanos de dominio público. Capaz en tu propio disco duro. Ayúdanos a encontrarlos.
+{{ site.title }} es una plataforma escalable. Y en la medida que crezca la cantidad de metadatos que se están almacenando, y se desarrollen nuevas funcionalidades, permitirá conocer datos relevantes sobre este corpus literario.
+
+En esta primera etapa, el archivo se ha alimentado parcialmente de las compilaciones de Mark Sanders, Paulette Ramsay, Antonio D Tillis, Keenan Norris, Idelfonso Pereda Valdés y Emilio Vallagas. Pero el archivo se encuentra abierto para que usuaries y beneficiaries de la plataforma [incorporen nuevos contenidos]({{BASE_PATH}}/agregar). 
+
+¿Tienes alguna obra o traducción en mente que no forma parte de este archivo? ¡Anímate a [sugerir su inorporación]({{BASE_PATH}}/agregar)!
+

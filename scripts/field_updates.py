@@ -1,12 +1,7 @@
-import pandas as pd
-  
-# reading the csv file
-df = pd.read_csv("_data/books.csv")
-  
-# updating the column value/data
-df = df.rename(columns={"File Attachments":"Cover","Url":"Download","Library Catalog":"Library"})
-
-# writing into the file
-df.to_csv("_data/books.csv", index=False)
-  
-print(df)
+with open('assets/data/books_zotero.csv','r') as file:
+    filedata = file.read()
+    filedata = filedata.replace('File Attachments','Cover')
+    filedata = filedata.replace('Url','Download')
+    filedata = filedata.replace('Library Catalog','Library')
+with open('assets/data/books_zotero.csv','w') as file:
+    file.write(filedata)

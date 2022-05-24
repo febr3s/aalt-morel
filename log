@@ -107,7 +107,8 @@ Habría que sumar un find and replace para poner las guillemets, poniendo en zot
 - Perfeccionar lo de primera edición
 - Agregar opción de flipbook para pantallas medianas a grandes
 - Agregar ilustraciones en un slideshow junto a la portada, quizá con una flechita opcional que se ilumine
-- Hay que agregar un boolean para identificar registros como traducciones o no
+- Hacer resultados de búsqueda más... bonitos
+- Hay que agregar un boolean para identificar registros como traducciones o no LISTO
 - Poner que el lugar sea opcional en el render de la ficha del libro
 - Para encontrar un error: ponerlo por orden de date added, buscar el último procesado, el siguiente es el del error. Recuerda siempre actualizar el archivo.
 - Los scripts deberían detectar si hay algo con doble signo de interrogación
@@ -125,8 +126,7 @@ Habría que sumar un find and replace para poner las guillemets, poniendo en zot
 
 - Generar las páginas con listas dinámicas
  - por idioma
- - por nacionalidad de le escritore
- - por año de edición
+ - por año de edición LISTO
 - Listas del index
  - portugués
  - español
@@ -134,7 +134,10 @@ Habría que sumar un find and replace para poner las guillemets, poniendo en zot
 - Crear nuevo theme a partir de modificaciones al original para la construcción de EsAT
 - Agregar link externo al repositorio
 - Encontrar una manera de no mostrar los autores que se crearon por error LISTO
-
+- Agregar una colección de sources y llamarlo como forloop en el texto de descripción (uno de sources procesadas y otra de sources por procesar)
+- Agregar colección de procesando y esperando libro, para generar un número dinámico en la descripción.
+- Diseñar un boletín
+- Poner en español la url de criterios
 
 5/17
 
@@ -216,3 +219,53 @@ Entonces no puedo intervenir el theme copiando un include o un layout, a menos q
 - El approach del post no funcionó del todo, salvo para aprender que los post no se muestran si no tienen formato de post en el nombre de archivo y definición de layout y creo que de título.
 - Probé el approach de una colección de "abouts". Funcionó para el include de promoción... después de un rato de confusión total con un "ver más" fantasma que aparecía como una verruga en medio de la frente. Ahora hay que armar el flujo con la página de about. También quedó pendiente pulir el layout de ese `ver mas` en el include de promotion.
 - Pendiente page de agregar y maybe la page by country. Also updating the images to match with our corpus. Also pages for every list.
+
+5/20
+
+- Comencé arreglando el filtro del gmail personal. Queda pendiente revisar un par de convocatorias y coso.
+
+- Generar las páginas con listas dinámicas
+ - por nacionalidad de les escritores LISTO
+
+- Limpiar archivos repetidos
+
+- pulir el layout de ese `ver mas` en el include de promotion LISTO.
+- Actualizar el workflow y el script para el _about_ LISTO 
+- page de agregar LISTO 
+- page by country LISTO
+- include de obras relacionadas cuando es un solo autor LISTO
+- pages for every list
+   - no descargables LISTO
+   - descargables LISTO
+   - traducciones LISTO
+- comprar trama
+- corregir vínculos con proxy LISTO
+- arreglando glitch de .0 en csv LISTO
+- updating the images in categories to match with our corpus y agregar criterio de nacionalidad LISTO
+
+
+Pomodoros
+...
+
+...
+
+...
+
+...
+
+
+5/23
+
+- quitar "descarga" de resultados de búsqueda si no lo tiene LISTO
+- actualizar links a páginas por listas LISTO
+
+
+5/24
+
+- cambiar logo LISTO
+- Rematar bug del .0 LISTO
+- y colores del tema LISTO
+- borrar títulos de los poemas LISTO
+- cambiar + por y/o LISTO
+- terminar redacción del about LISTO
+- escribirle a Mark
