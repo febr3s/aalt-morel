@@ -243,6 +243,9 @@ Pomodoros
 
 # Layout
     
+    - quitar instagram del footer
+    - Convertir las traducciones contemporáneas en samples, con la dificultad de limitarlas a traducciones de este siglo
+    - Sumar un book sample en la cabecera
     - Crear la posibilidad de navegar al próximo book sample
     - Add elipsis for books with more than three authors
     - Layout para ediciones bilingües
