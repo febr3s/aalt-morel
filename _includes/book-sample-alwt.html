@@ -1,5 +1,6 @@
-        {% assign books = site.data.books | samplr:2 %}
+        {% assign books = site.data.books | sort:'edition' %}
         {% for book in books limit:1 %}
+        {% if book.publisher == "New Mexico Press"}
         <h1 class="book">{{ book.title }}</h1>
 
         <div class="obra-dia sombra">

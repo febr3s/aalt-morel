@@ -82,62 +82,7 @@ No pueden haber ciertos caracteres en el título hasta nuevo aviso (el & enchava
 
 Habría que sumar un find and replace para poner las guillemets, poniendo en zotero <<>>. 
 
-# Futuro
-- Script para copiar pdf
-- Script para upload a Archive
-- Activar pages de Date
-- Crear plantilla nueva y traducir
-- Hacer un workaound para los distintos tipos de archivo (epub, txt)
-- Acomodar repositorio a múltiples valores
-- Configurar para que dé error si no están todos los campos bien
-- Add elipsis for books with more than three authors
-- Hacer script que borre el double quote del csv
-- Script para optimizar pdf's
-- Script para seleccionar condicionalmente el short title
-- Layout para ediciones bilingües
-- Layout para libros sin portada
-- Autoactualización de archivo Zotero
-- Script para chequear que todos los archivos adjuntos son procesables
-- ¿Habrá una forma de diferenciar cuando Extra se refiere a la nacionalidad de los autores y cuando se refiere a la nacionalidad de los traductores?
-- Crear un script para identificar si hay traducciones disponibles de una obra o no
-- Banderita en el book layout, con link a libros publicados en ese país
-- Agregar idioma a la nomenclatura del archivo md
-- Condicionar que haya link en la metadata solo si hay más de uno
-- Perfeccionar lo del título corto
-- Perfeccionar lo de primera edición
-- Agregar opción de flipbook para pantallas medianas a grandes
-- Agregar ilustraciones en un slideshow junto a la portada, quizá con una flechita opcional que se ilumine
-- Hacer resultados de búsqueda más... bonitos
-- Hay que agregar un boolean para identificar registros como traducciones o no LISTO
-- Poner que el lugar sea opcional en el render de la ficha del libro
-- Para encontrar un error: ponerlo por orden de date added, buscar el último procesado, el siguiente es el del error. Recuerda siempre actualizar el archivo.
-- Los scripts deberían detectar si hay algo con doble signo de interrogación
-- También deben detectar si hay algún png coleado
-- Detectar si hay espaciado doble (  ) o punto pegado de espacio, porque eso va a confundir las convenciones de nombre
-- Detectar si hay algún link con un proxi
 
-# Corto plazo
-
-- Generar las páginas con listas dinámicas
- - las existentes LISTO
-- Quitar links a biblioteca que tengan proxi
-
- # Mediano plazo
-
-- Generar las páginas con listas dinámicas
- - por idioma
- - por año de edición LISTO
-- Listas del index
- - portugués
- - español
- - inglés
-- Crear nuevo theme a partir de modificaciones al original para la construcción de EsAT
-- Agregar link externo al repositorio
-- Encontrar una manera de no mostrar los autores que se crearon por error LISTO
-- Agregar una colección de sources y llamarlo como forloop en el texto de descripción (uno de sources procesadas y otra de sources por procesar)
-- Agregar colección de procesando y esperando libro, para generar un número dinámico en la descripción.
-- Diseñar un boletín
-- Poner en español la url de criterios
 
 5/17
 
@@ -269,3 +214,60 @@ Pomodoros
 - cambiar + por y/o LISTO
 - terminar redacción del about LISTO
 - escribirle a Mark
+
+# EN VERANO O MÁS ALLÁ
+
+# Scripts para paso de Zotero a site
+
+    - Script para copiar pdf
+    - Configurar para que dé error si no están todos los campos bien
+    - Hacer un workaound para los distintos tipos de archivo (epub, txt)
+    - Script para optimizar pdf's
+    - Script para seleccionar condicionalmente el short title
+    - Script para chequear que todos los archivos adjuntos son procesables
+    - Los scripts deberían detectar si hay algo con doble signo de interrogación
+    - También deben detectar si hay algún png coleado
+    - Detectar si hay espaciado doble (  ) o punto pegado de espacio, porque eso va a confundir las convenciones de nombre
+    - Detectar si hay algún link con un proxi
+    - Autoactualización de archivo Zotero
+
+# Scripts para API's
+
+    - Script para upload a Archive
+    - Script para encontrar traducciones en Worldcat
+    - Agregar idioma a la nomenclatura del archivo md
+    - Custom csl
+
+# Crear plantilla nueva y traducir
+
+
+# Layout
+    
+    - Crear la posibilidad de navegar al próximo book sample
+    - Add elipsis for books with more than three authors
+    - Layout para ediciones bilingües
+    - Layout para libros sin portada
+    - Banderita en el book layout, con link a libros publicados en ese país
+    - Condicionar que haya link en la metadata solo si hay más de uno
+    - Agregar opción de flipbook para pantallas medianas a grandes
+    - Agregar ilustraciones en un slideshow junto a la portada, quizá con una flechita opcional que se ilumine
+    - Hacer resultados de búsqueda más... bonitos
+    - Poner que el lugar sea opcional en el render de la ficha del libro
+    - Acomodar repositorio, editorial, ciudad, idioma y nacionalidad a múltiples valores
+    - Listas del index
+         - portugués
+         - español
+         - inglés
+    - Agregar link externo al repositorio
+    - Agregar una colección de sources y llamarlo como forloop en el texto de descripción (uno de sources procesadas y otra de sources por procesar)
+    - Agregar colección de procesando y esperando libro, para generar un número dinámico en la descripción.
+    - Diseñar un boletín
+    - Poner en español la url de criterios
+    - Hacer expansible dentro de la misma página el "ver más"
+
+
+# Documentation
+
+
+    - Para encontrar un error: ponerlo por orden de date added, buscar el último procesado, el siguiente es el del error. Recuerda siempre actualizar el archivo.
+
