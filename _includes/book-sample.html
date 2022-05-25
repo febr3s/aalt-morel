@@ -1,4 +1,4 @@
-        {% assign books = site.data.books | samplr:2 %}
+        {% assign books = site.data.books | sample:2 %}
         {% for book in books limit:1 %}
         <h1 class="book">{{ book.title }}</h1>
 
@@ -48,7 +48,6 @@
                 {% endif %}
             </div>
         </div>
-        {% endif %}
         {% endfor %}
 
        
